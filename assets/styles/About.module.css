@@ -1,0 +1,29 @@
+.h1{
+    font-size: 4rem;
+    margin-left: 0.5em;
+}
+.bio > p{
+margin-bottom: 1em;
+    padding: 0 1em 0 1em;
+}
+
+.vision{
+    background-color: var(--bears-navy);
+    padding: 2em 1em 2em 1em;
+    color: white;
+    width: 90%;
+    max-width: 40em;
+    border-radius:1em ;
+}
+
+.aboutus{
+    max-width: 40em;
+}
+
+.aboutText{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+

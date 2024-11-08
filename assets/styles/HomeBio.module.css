@@ -1,0 +1,68 @@
+.HomeBioContainer{
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.HomeBioSection{
+    width: 70%;
+    max-width: 50em;
+    padding: 0 0 1em 2em ;
+}
+.Header{
+    font-size: 5em;
+    font-weight: 900;
+    color: var(--bears-orange);
+    line-height: 1;
+    padding: 0.3em 0 0.3em 0;
+}
+
+.bio{
+
+    /*max-width: 40em;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+
+}
+
+.bioClip{
+    background-color: var(--bears-navy);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    height: 5em;
+}
+
+.chiPngParent{
+    position: absolute;
+    right: -40vw;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.chiPng{
+    width: 100%;
+    max-width: 50em;
+    filter: blur(3px);
+    opacity: 0.2;
+}
+
+
+
+
+@media (min-width: 720px) {
+    .chiPngParent{
+
+        right: -50vw;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .chiPngParent{
+
+        right: -60vw;
+
+    }
+}

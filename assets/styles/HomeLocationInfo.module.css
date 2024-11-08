@@ -1,0 +1,57 @@
+.container{
+    background-color: var(--bears-navy);
+    height: auto;
+    /*padding: 1em;*/
+
+}
+.iconContainers{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+.iconCategory{
+    width: 10em;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex: 1 1 50%;
+}
+.iconStyles{
+    color: var(--bears-orange);
+    font-size: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.iconText{
+    color: white;width: 100%;
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.clipPathEnd{
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    height: 5em;
+    background-color: white;
+
+}
+
+.secHeader{
+    padding: 1em;
+    color: white;
+}
+.secHeader > h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+.secHeader > p{
+    text-align: center;
+    max-width: 40em;
+    justify-content: center;
+    margin: auto;
+}

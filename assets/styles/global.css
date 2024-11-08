@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'LogoFont';
+    src: url('/fonts/logoFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bears-navy: #0B162A;
+    --bears-orange: #C83803;
+}
+html{
+
+}
+
+body{
+    background-color: white;
+    /*overflow: hidden;*/
+}

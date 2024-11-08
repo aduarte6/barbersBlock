@@ -1,0 +1,47 @@
+.categorySectionParent > h2{
+    text-align: center;
+    font-size: 3em;
+
+}
+
+.category {
+    display: grid;
+    gap: 1.5em;
+    align-items: start;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.servHeaderImage {
+    width:clamp(90%, 5vw, 10em);
+    max-width: 40em;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    border-radius: 1em;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+
+@media (min-width: 720px) {
+    .category {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+
+@media (min-width: 1020px) {
+    .category {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on desktop */
+        gap: 2em;
+        justify-items: center; /* Center each grid item */
+        align-items: center;
+    }
+}
+
+

@@ -1,0 +1,30 @@
+.navLogoTitle{
+    font-family: LogoFont;
+    color: white;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2em;
+    align-items: center;
+
+}
+
+.header{
+    background-color: var(--bears-navy);
+    padding-top: 0.5em;
+}
+.header > nav {
+    width: 100% !important;
+    justify-content: space-between !important;
+    padding-bottom: 0.5em;
+}
+
+.navDa{
+    font-size: 2.8em;
+}
+
+.navBarberBlock{
+    font-size: 1em;
+    padding-left: 0.4em;
+    justify-content: lef;
+}
