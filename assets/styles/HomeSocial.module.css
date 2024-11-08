@@ -60,6 +60,8 @@
 .secHeader > h1{
     text-align: center;
     font-size: 3em;
+    color: var(--bears-orange);
+
 }
 
 .secHeader > p{
