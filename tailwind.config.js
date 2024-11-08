@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'links-900': "rgba(17, 32, 60, 1)"
+
       },
     },
   },
