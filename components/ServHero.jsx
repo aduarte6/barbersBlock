@@ -16,7 +16,7 @@ const ServHero = () => {
                     src="/images/services/servHeaderImage.jpg"
                     alt="Service Header"
                     width={1200}
-                    height={0}
+                    height={800}
                 />
             </section>
 
@@ -50,7 +50,7 @@ const ServHero = () => {
                     ))}
                 </div>
             </section>
-            <section>
+            <section className={styles.bookingSection}>
                 <h3>Booking Process</h3>
                 <p>
                     Booking with us is easy! Just head to our bookin page, pick the service you want, choose your favorite

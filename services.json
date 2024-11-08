@@ -2,7 +2,7 @@
   {
     "_id": "1",
     "name": "Fade",
-    "description": "A clean fade cut that gradually tapers from short to skin, providing a sharp, fresh look.",
+    "description": "A clean fade cut that gradually tapers from short to skin, giving a sharp and fresh look everytime.",
     "price": "$55",
     "type": "adult",
     "features": ["Razor finish", "Complimentary styling product", "Quick cleanup"]
@@ -18,10 +18,10 @@
   {
     "_id": "3",
     "name": "Lining",
-    "description": "Crisp, precise lining that sharpens up your hairline and enhances your overall look.",
+    "description": "Crisp and precise lining that sharpens up your hairline and enhances your overall look.",
     "price": "$25",
     "type": "adult",
-    "features": ["Straight razor finish", "Detaild edges"]
+    "features": ["Straight razor finish", "Hair Fibers"]
   },
   {
     "_id": "4",
@@ -34,7 +34,7 @@
   {
     "_id": "5",
     "name": "Kids Cut",
-    "description": "A kid-friendly haircut designed to keep them looking fresh and stylish, perfect for any occasion.",
+    "description": "A kid friendly haircut designed to keep them looking fresh and stylish, perfect for any occasion.",
     "price": "$25",
     "type": "kid",
     "features": ["Kid-friendly barbers", "Gentle tools", "Quick service"]
@@ -42,7 +42,7 @@
   {
     "_id": "6",
     "name": "Braids",
-    "description": "Professional braiding for a bold style. From cornrows to intricate patterns, get a look that lasts.",
+    "description": "Professional braiding for a bold style. From cornrows to intricate patterns, get a look that lasts. Please request a week in advance to plan with our braider accordingly.",
     "price": "$85 +",
     "type": "adult",
     "features": ["Multiple braid styles", "Protective style products", "Long-lasting hold"]
@@ -50,7 +50,7 @@
   {
     "_id": "7",
     "name": "Mohawk/Sponge High Top",
-    "description": "A modern high-top style with sponge curls or a classic mohawk for an edgy, eye-catching look.",
+    "description": "A modern high-top style with sponge curls or a classic mohawk for an edgy eye-catching look.",
     "price": "$40",
     "type": "adult",
     "features": ["Sponge curl technique", "High-top trim", "Style hold product"]

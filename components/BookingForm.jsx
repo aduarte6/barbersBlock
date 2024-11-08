@@ -17,7 +17,7 @@ const BookingForm = () => {
                 <label className={styles.label}>
                     Select a Service:
                     <select name="service" className={styles.select}>
-                        <option value="">-- Choose a service --</option>
+                        <option value="">---</option>
                         {services.map((service) => (
                             <option key={service._id} value={service.name}>
                                 {service.name} - {service.price}
@@ -28,17 +28,17 @@ const BookingForm = () => {
 
                 <label className={styles.label}>
                     Name:
-                    <input type="text" name="name" className={styles.input} required/>
+                    <input type="text" name="name" className={styles.input}/>
                 </label>
 
                 <label className={styles.label}>
                     Email:
-                    <input type="email" name="email" className={styles.input} required/>
+                    <input type="email" name="email" className={styles.input}/>
                 </label>
 
                 <label className={styles.label}>
                     Phone:
-                    <input type="tel" name="phone" className={styles.input} required/>
+                    <input type="tel" name="phone" className={styles.input}/>
                 </label>
 
                 <button type="button" className={styles.button}>

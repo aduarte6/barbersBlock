@@ -14,7 +14,7 @@ const About = () => {
                   src="/images/about/aboutHeader.jpg"
                   alt="https://unsplash.com/photos/red-and-black-leather-office-rolling-chair-XTAtx9UhNBo"
                   width={1200}
-                  height={0}
+                  height={800}
               />
           </section>
 

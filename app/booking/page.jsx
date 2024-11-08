@@ -3,6 +3,12 @@ import styles from '@/assets/styles/BookingPage.module.css';
 import HomeSocial from "@/components/HomeSocial";
 import BookingForm from "@/components/BookingForm";
 
+export const metadata = {
+    title: "Book Now | Barbers Block",
+    description: "Book Now with our experience barbers.",
+    keywords: "contact, appointment, fade, barbers,",
+};
+
 const page = () => {
     return (
         <>

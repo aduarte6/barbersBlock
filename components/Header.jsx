@@ -11,7 +11,6 @@ const Header = () => {
         <header className={styles.header}>
             <nav className=" relative flex">
 
-                {/* Logo Section */}
                 <Link href="/">
                     <div className={styles.navLogoTitle}>
                         <div className={styles.navDa}>Da</div>
@@ -22,7 +21,6 @@ const Header = () => {
                     </div>
                 </Link>
 
-                {/* Mobile Menu Button */}
                 <button
                     type="button"
                     className="md:hidden p-2 text-gray-400 hover:bg-gray-700 hover:text-white"
@@ -40,7 +38,6 @@ const Header = () => {
                     </svg>
                 </button>
 
-                {/* Desktop Navigation Links */}
                 <div className="hidden md:flex space-x-4 pr-8">
                     <Link href="/" className="text-white hover:bg-gray-900 rounded-md px-3 py-2">
                         Home
@@ -62,7 +59,6 @@ const Header = () => {
                 </div>
             </nav>
 
-            {/* Mobile Menu */}
             {isMobileMenuOpen && (
                 <div className="px-2 pb-3 pt-2 md:hidden bg-links-900">
                     <Link href="/" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2">

@@ -7,42 +7,37 @@
     gap: 2em;
 }
 
-/* Style for individual sections */
-.section {
+.section, .formSection {
     padding: 1.5em;
-    background-color: #fff;
+    background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 1em;
 }
 
-.section h3 {
+.section h3, .formSection  h2 {
     margin-bottom: 1em;
     color: var(--bears-orange);
     font-size: 1.8em;
 }
 
-.section p {
+.section p, .formSection  p {
     margin-bottom: 1em;
-    line-height: 1.6;
     color: #333;
 }
 
-/* Media Query for Tablet (720px) */
 @media (min-width: 720px) {
     .container {
         max-width: 80%;
     }
 }
 
-/* Media Query for Desktop (1020px) */
 @media (min-width: 1020px) {
     .container {
         max-width: 70%;
         gap: 2em;
     }
 
-    /* Align Press & Media and Community Engagement sections side by side */
     .row {
         display: flex;
         flex-direction: row;

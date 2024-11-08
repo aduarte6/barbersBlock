@@ -4,7 +4,6 @@ import styles from '@/assets/styles/ContactForm.module.css';
 const ContactForm = () => {
     return (
         <div className={styles.container}>
-            <h2 className={styles.title}>Get in Touch</h2>
             <form className={styles.form}>
                 <label className={styles.label}>
                     Name:

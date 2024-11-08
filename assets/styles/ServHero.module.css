@@ -27,20 +27,46 @@
     margin-bottom: 3em;
 }
 
+.bookingSection {
+    padding: 2em;
+}
+
+.bookingSection h3 {
+    font-size: 1.7em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.bookingSection p {
+    color: #555;
+
+}
+
+
 
 @media (min-width: 720px) {
     .category {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
 @media (min-width: 1020px) {
     .category {
-        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns on desktop */
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 2em;
-        justify-items: center; /* Center each grid item */
+        justify-items: center;
         align-items: center;
+    }
+
+    .bookingSection{
+        padding: 2em;
+        width: 35em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
     }
 }
 

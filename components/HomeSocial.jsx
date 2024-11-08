@@ -4,7 +4,6 @@ import styles from '@/assets/styles/HomeSocial.module.css';
 import images from '@/socialMedia.json';
 
 const HomeSocial = () => {
-    const basePath = '/images/home/'; // Base path for the images
 
     return (
 <>
@@ -22,8 +21,8 @@ const HomeSocial = () => {
                 <Image
                     src={`/images/home/${image.src}`}
                     alt={image.description}
-                    width={0}
-                    height={0}
+                    width={1200}
+                    height={800}
                     sizes="100vw"
                         className={styles.socialImage}
                     />
