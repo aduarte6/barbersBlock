@@ -11,7 +11,8 @@ export const metadata = {
 
 const page = () => {
     return (
-        <>
+        <div>
+        <div className={styles.parent}>
             <BookingForm />
 
 
@@ -35,8 +36,10 @@ const page = () => {
                 </div>
             </section>
 
-            <HomeSocial />
-        </>
+
+        </div>
+    <HomeSocial />
+    </div>
     );
 };
 

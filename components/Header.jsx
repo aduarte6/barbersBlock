@@ -61,19 +61,19 @@ const Header = () => {
 
             {isMobileMenuOpen && (
                 <div className="px-2 pb-3 pt-2 md:hidden bg-links-900">
-                    <Link href="/" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2">
+                    <Link href="/" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={() => setIsMobileMenuOpen(false)}>
                         Home
                     </Link>
-                    <Link href="/services" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2">
+                    <Link href="/services" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={() => setIsMobileMenuOpen(false)}>
                         Services
                     </Link>
-                    <Link href="/about" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2">
+                    <Link href="/about" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={() => setIsMobileMenuOpen(false)}>
                         About
                     </Link>
-                    <Link href="/booking" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2">
+                    <Link href="/booking" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={() => setIsMobileMenuOpen(false)}>
                         Booking
                     </Link>
-                    <Link href="/contact" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2">
+                    <Link href="/contact" className=" text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={() => setIsMobileMenuOpen(false)}>
                         Contact
                     </Link>
 

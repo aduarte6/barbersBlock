@@ -38,9 +38,9 @@ const HomeLocationInfo = () => {
           <section className={styles.secHeader}>
 
               <p>
-                  With three convenient Chicago locations, each offers the quality and care you expect from our team.
-                  Stop by South Ashland for a neighborhood vibe, West Grand for a quick west-side cut, or East 79th for
-                  a welcoming South Side fade. Wherever you are, our skilled barbers are ready to serve you.
+                  With three Chicago locations, each offers the high quality you expect from us.
+                  Stop by South Ashland for a neighborhood vibe, West Grand for a quick west side cut, or East 79th for
+                  a clean south side fade. Wherever you are, our skilled barbers are ready to get you right!
               </p>
 
           </section>

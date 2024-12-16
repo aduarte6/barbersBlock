@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '@/assets/styles/Footer.module.css';
+import Link from 'next/link';
 
 const Footer = () => {
     return (
@@ -21,7 +22,11 @@ const Footer = () => {
 
                     <div className={styles.bookNowSection}>
                         <p className={styles.bookText}>Ready for a fresh look? Book your appointment today!</p>
-                        <button className={styles.bookButton}>Book Now</button>
+                        <Link href="/booking">
+                            <button className={styles.bookButton}>
+                                Book Now
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

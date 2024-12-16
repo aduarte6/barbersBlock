@@ -1,10 +1,9 @@
 .container {
-    max-width: 600px;
-    margin: 2em auto;
-    padding: 2em;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /*margin: 2em auto;*/
+    /*padding: 2em;*/
+    /*background-color: #f9f9f9;*/
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
 }
 
 .title {
@@ -49,4 +48,21 @@
 
 .button:hover {
     background-color: var(--bears-navy);
+}
+
+
+@media (min-width: 1020px) {
+    .container {
+        /*max-width: 60%;*/
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+    }
+
+    .button {
+        grid-column: span 2;
+    }
 }

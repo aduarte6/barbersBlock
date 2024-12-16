@@ -53,9 +53,9 @@ const ServHero = () => {
             <section className={styles.bookingSection}>
                 <h3>Booking Process</h3>
                 <p>
-                    Booking with us is easy! Just head to our bookin page, pick the service you want, choose your favorite
-                    barber, and select a time that works for you. Once you confirm, you’ll get a text with all
-                    the details. We suggest booking early to lock in your spot, especially during busy hours!
+                    Booking with us is easy! Just head to our bookin page, pick the service you want and select a time
+                    that works for you. Once you confirm, you’ll get a text with all the details. We suggest booking early
+                    to lock in your spot, especially during busy hours!
                 </p>
             </section>
 

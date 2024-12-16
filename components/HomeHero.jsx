@@ -1,16 +1,18 @@
 import React from 'react';
 import styles from '@/assets/styles/HomeHero.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
+import HeroImage from '@/public/images/home/barberblockHero.webp';
 
 const HomeHero = () => {
     return (
         <div className={styles.heroContainer}>
             <Image
                 className={styles.heroImage}
-                src="/images/home/homeHero2.jpg"
+                src={HeroImage}
                 alt="https://unsplash.com/photos/black-wooden-stars-with-road-signage-on-each-steps-B0butg0XCD4"
                 width={2400}
-                height={1200}
+                height={2400}
             />
             <div className={styles.textContainer}>
                 <div className={styles.heroContent}>
@@ -18,7 +20,12 @@ const HomeHero = () => {
                     <p>Your Barbers</p>
                 </div>
                 <div className={styles.buttonDiv}>
-                    <button className={styles.heroButton}>Book Now</button>
+                    <Link href="/booking">
+                        <button className={styles.heroButton}>
+                            Book Now
+                        </button>
+
+                    </Link>
                 </div>
 
             </div>

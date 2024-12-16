@@ -31,7 +31,7 @@ const HomeBio = () => {
 
           </div>
           <div className={styles.chiPngParent}>
-              <Image  className={styles.chiPng} src="/images/home/chicagoout.webp" alt="chicago outline" width={100} height={800} />
+              <Image  className={styles.chiPng} src="/images/home/chicagoout.webp" alt="https://stock.adobe.com/images/chicago/431255482?prev_url=detail" width={100} height={800} />
 
           </div>
           <div className={styles.bioClip}></div>
