@@ -9,7 +9,7 @@ const HomeBio = () => {
       <section className={styles.HomeBioContainer}>
           <div className={styles.HomeBioSection}>
               <div className={styles.Header}>
-                  <p>Chicago's Newest Barbershop</p>
+                  <p>Chicago&apos;s Newest Barbershop</p>
               </div>
               <div className={styles.bio}>
                   <p>
@@ -20,7 +20,7 @@ const HomeBio = () => {
                   </p>
                   <p>
                       With location throughout Chicago, we pride ourselves on being more than just a
-                      barbershop. We’re a part of your block, a place where everyone has space, stories are shared,
+                      barbershop. We`&apos;`re a part of your block, a place where everyone has space, stories are shared,
                       and connections are made. Our skilled barbers bring unmatched expertise to every cut,
                       treating all clients with care and attention to detail. From the latest trend to timeless
                       classics. we have the skills to make your vision a reality.
