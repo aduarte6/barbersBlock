@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/assets/styles/HomeSocial.module.css';
-import images from '@/socialMedia.json';
+import images from '@/socialmedia.json';
 
 const HomeSocial = () => {
 
