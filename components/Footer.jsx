@@ -22,7 +22,7 @@ const Footer = () => {
 
                     <div className={styles.bookNowSection}>
                         <p className={styles.bookText}>Ready for a fresh look? Book your appointment today!</p>
-                        <Link href="/booking">
+                        <Link href="/auth">
                             <button className={styles.bookButton}>
                                 Book Now
                             </button>

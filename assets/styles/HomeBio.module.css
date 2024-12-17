@@ -11,7 +11,7 @@
     padding: 0 0 1em 2em ;
 }
 .Header{
-    font-size: 5em;
+    font-size: clamp(3em, 5vw,5em);
     font-weight: 900;
     color: var(--bears-orange);
     line-height: 1;
