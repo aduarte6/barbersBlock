@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/assets/styles/NavBanner.module.css'
+import styles from '../assets/styles/NavBanner.module.css'
 
 const NavBanner = () => {
   return (

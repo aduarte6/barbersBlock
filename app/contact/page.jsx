@@ -13,7 +13,7 @@ const page = () => {
         <div className={styles.container}>
             <section className={styles.formSection}>
                 <h2>Contact Us</h2>
-                <p>Have questions or want to share a review with us? Fill out the form below, and we&aposll get back to you as
+                <p>Have questions or want to share a review with us? Fill out the form below, and we&apos;ll get back to you as
                     soon as we can. Thank you!</p>
                 <ContactForm/>
             </section>
@@ -22,8 +22,8 @@ const page = () => {
             <section className={styles.row}>
                 <div className={styles.section}>
                     <h3>Press & Media</h3>
-                    <p>We’re excited to work with journalists, influencers and bloggers. If you would like to feature Barbers Block,
-                        we’ve got resources ready for you.</p>
+                    <p>We&apos;re excited to work with journalists, influencers and bloggers. If you would like to feature Barbers Block,
+                        we&apos;ve got resources ready for you.</p>
                     <p>For press inquiries, email us at press@barbersblock.com.</p>
                 </div>
 
