@@ -1,9 +1,9 @@
 {
   "auth": {
     "user_pool_id": "process.env.AUTH_USER_POOL_ID",
-    "aws_region": "process.env.AWS_REGION",
+    "region": "process.env.REGION",
     "user_pool_client_id": "process.env.AUTH_USER_POOL_CLIENT_ID",
-    "identity_pool_id": "process.env.IDENTITY_POOL_ID",
+    "identity_pool_id": "process.env.AUTH_IDENTITY_POOL_ID",
     "mfa_methods": [],
     "standard_required_attributes": [
       "email",
@@ -29,7 +29,7 @@
   },
   "data": {
     "url": "process.env.API_URL",
-    "aws_region": "process.env.AWS_REGION",
+    "region": "process.env.DATA_REGION",
     "default_authorization_type": "AWS_IAM",
     "authorization_types": [
       "AMAZON_COGNITO_USER_POOLS"
