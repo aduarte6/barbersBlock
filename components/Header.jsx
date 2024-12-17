@@ -8,14 +8,54 @@ import { fetchUserAttributes } from "aws-amplify/auth";
 import styles from "../assets/styles/Header.module.css";
 import NavBanner from "../components/NavBanner";
 
+// Reusable NavLinks Component
+const NavLinks = ({ onClick, user, router }) => (
+    <>
+        <Link href="/" className="text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={onClick}>
+            Home
+        </Link>
+        <Link href="/services" className="text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={onClick}>
+            Services
+        </Link>
+        <Link href="/about" className="text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={onClick}>
+            About
+        </Link>
+        <Link href="/contact" className="text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={onClick}>
+            Contact
+        </Link>
+        {user ? (
+            <>
+                <Link href="/auth" className="text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={onClick}>
+                    <span className="text-white">Book now</span>
+                </Link>
+                <Link href="/" onClick={onClick} className="text-white hover:bg-red-500 px-3 py-2">
+                    Sign Out
+                </Link>
+            </>
+        ) : (
+            <Link
+                href="/auth"
+                onClick={(e) => {
+                    e.preventDefault(); // Prevent default action to allow custom handling
+                    onClick();
+                    router.push("/auth");
+                }}
+                className="text-white hover:bg-gray-900 rounded-md px-3 py-2"
+            >
+                Sign In
+            </Link>
+        )}
+    </>
+);
+
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [name, setName] = useState(null); // Use plain JS (no TypeScript)
-    const router = useRouter();
+    const [name, setName] = useState(null);
+    const router = useRouter(); // This is the correct place to define router
     const { user, signOut } = useAuthenticator((context) => [context.user]);
 
     const handleSignOut = () => {
-        signOut(); // Assuming this clears session/auth
+        signOut();
     };
 
     const handleMenuToggle = () => {
@@ -53,36 +93,7 @@ const Header = () => {
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex space-x-4 pr-8">
-                    <Link href="/" className="text-white hover:bg-gray-900 rounded-md px-3 py-2">
-                        Home
-                    </Link>
-                    <Link href="/services" className="text-white hover:bg-gray-900 rounded-md px-3 py-2">
-                        Services
-                    </Link>
-                    <Link href="/about" className="text-white hover:bg-gray-900 rounded-md px-3 py-2">
-                        About
-                    </Link>
-                    <Link href="/contact" className="text-white hover:bg-gray-900 rounded-md px-3 py-2">
-                        Contact
-                    </Link>
-
-                    {/* Auth Buttons */}
-                    {user ? (
-                        <>
-                            <Link href="/auth" className="text-white hover:bg-gray-900 rounded-md px-3 py-2">
-                                <span className="text-white">Book now</span>
-                            </Link>
-
-                            <Link href="/" onClick={handleSignOut} className="text-white hover:bg-red-500 px-3 py-2">
-                                Sign Out
-                            </Link>
-                        </>
-                    ) : (
-                        <Link href="/auth" onClick={() => router.push("/auth")}
-                              className="text-white hover:bg-gray-900 rounded-md px-3 py-2">
-                            Sign In
-                        </Link>
-                    )}
+                    <NavLinks onClick={() => {}} user={user} router={router} />
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -92,9 +103,9 @@ const Header = () => {
                     aria-label="Toggle menu"
                 >
                     {isMobileMenuOpen ? (
-                        <span>&#x2715;</span>  // Close (X) symbol
+                        <span>&#x2715;</span> // Close (X) symbol
                     ) : (
-                        <span>&#9776;</span>  // Hamburger icon (three horizontal lines)
+                        <span>&#9776;</span> // Hamburger icon (three horizontal lines)
                     )}
                 </button>
             </nav>
@@ -102,35 +113,7 @@ const Header = () => {
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
                 <div className="px-2 pb-3 pt-2 md:hidden bg-links-900">
-                    <Link href="/" className="text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2"
-                          onClick={() => setIsMobileMenuOpen(false)}>
-                        Home
-                    </Link>
-                    <Link href="/services"
-                          className="text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                        Services
-                    </Link>
-                    <Link href="/about" className="text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                        About
-                    </Link>
-                    <Link href="/contact" className="text-center block text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                        Contact
-                    </Link>
-                    {user ? (
-                        <>
-                            <Link href="/auth" className="text-white hover:bg-gray-900 rounded-md px-3 py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                                <span className="text-white">Book now</span>
-                            </Link>
-
-                            <Link href="/" onClick={handleSignOut} className="text-white hover:bg-red-500 px-3 py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                                Sign Out
-                            </Link>
-                        </>
-                    ) : (
-                        <Link href="/auth" onClick={() => { router.push("/auth"); setIsMobileMenuOpen(false); }} className="text-white w-full text-center hover:bg-gray-900 ">
-                            Sign In
-                        </Link>
-                    )}
+                    <NavLinks onClick={() => setIsMobileMenuOpen(false)} user={user} router={router} />
                 </div>
             )}
 
