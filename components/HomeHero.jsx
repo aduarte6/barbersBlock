@@ -20,7 +20,7 @@ const HomeHero = () => {
                     <p>Your Barbers</p>
                 </div>
                 <div className={styles.buttonDiv}>
-                    <Link href="/booking">
+                    <Link href="/auth">
                         <button className={styles.heroButton}>
                             Book Now
                         </button>
