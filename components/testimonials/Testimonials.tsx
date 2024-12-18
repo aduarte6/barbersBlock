@@ -125,7 +125,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
             onClick={() => handleMove(position)}
             className={`
         absolute left-1/2 top-1/2 cursor-pointer border-[rgb(200,56,3);] p-8 text-black transition-colors duration-500 
-        ${isActive ? "z-10 bg-white " : "z-0 bg-[rgb(11,22,42)] "}
+        ${isActive ? "z-10 bg-[rgb(200,56,3)] " : "z-0 bg-[rgb(11,22,42)] "}
       `}
             style={{
                 borderWidth: BORDER_SIZE,
@@ -169,14 +169,14 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
             />
             <h3
                 className={`text-base sm:text-xl ${
-                    isActive ? "text-black" : "text-white"
+                    isActive ? "text-whiye" : "text-white"
                 }`}
             >
                 &quot;{testimonial.testimonial}&quot;
             </h3>
             <p
                 className={`absolute bottom-8 left-8 right-8 mt-2 text-sm italic ${
-                    isActive ? "text-[rgb(200,56,3)]" : "text-white/40"
+                    isActive ? "text-white/60" : "text-white/40"
                 }`}
             >
                 - {testimonial.by}

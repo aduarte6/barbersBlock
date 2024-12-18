@@ -93,7 +93,7 @@ const ExampleLoginData: React.FC<Props> = ({ userName }) => {
                         </thead>
                         <tbody>
                         {pastAppointments.map((appointment, index) => (
-                            <tr key={index} className="border-b hover:bg-gray-100">
+                            <tr key={index} className="border-b text-gray-400 hover:text-black hover:bg-gray-100">
                                 <td className="px-4 py-2">{appointment.service}</td>
                                 <td className="px-4 py-2">{appointment.date}</td>
                                 <td className="px-4 py-2">{appointment.time}</td>
