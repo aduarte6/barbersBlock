@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: clamp(35vw, 11vw, 40em);
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .heroImage{
     display: block;
