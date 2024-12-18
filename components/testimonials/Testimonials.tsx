@@ -125,7 +125,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
             onClick={() => handleMove(position)}
             className={`
         absolute left-1/2 top-1/2 cursor-pointer border-[rgb(200,56,3);] p-8 text-white transition-colors duration-500 
-        ${isActive ? "z-10 bg-[rgb(200,56,3)] " : "z-0 bg-[rgb(11,22,42)] "}
+        ${isActive ? "z-10 bg-orangeGradient backdrop-blur-[10px]" : "z-0 bg-navyGradient backdrop-blur-[10px] "}
       `}
             style={{
                 borderWidth: BORDER_SIZE,
@@ -239,7 +239,7 @@ const StaggerTestimonials: FC = () => {
     return (
         <div
             {...swipeHandlers}
-            className="relative w-full overflow-hidden bg-white"
+            className="relative w-full overflow-hidden"
             style={{
                 height: SECTION_HEIGHT,
             }}
