@@ -6,13 +6,13 @@ import HomeSocial from "../components/HomeSocial";
 
 const HomePage = () => {
   return (
-<>
+<main className="overflow-hidden">
   <HomeHero/>
   <HomeBio/>
   <HomeLocationInfo/>
   <HomeSocial/>
 
-</>
+</main>
   );
 };
 

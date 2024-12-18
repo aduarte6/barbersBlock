@@ -3,6 +3,8 @@
 import React, { FC, useEffect, useState, MouseEventHandler } from "react";
 import { motion } from "framer-motion";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { useSwipeable } from "react-swipeable";
+
 
 interface Testimonial {
     tempId: number;
@@ -183,6 +185,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
     );
 };
 
+
 const StaggerTestimonials: FC = () => {
     const [cardSize, setCardSize] = useState(CARD_SIZE_LG);
     const [testimonials, setTestimonials] = useState<Testimonial[]>(TESTIMONIAL_DATA);
@@ -226,8 +229,16 @@ const StaggerTestimonials: FC = () => {
         };
     }, []);
 
+    // Add swipe handling
+    const swipeHandlers = useSwipeable({
+        onSwipedLeft: () => handleMove(1),  // Move cards to the left
+        onSwipedRight: () => handleMove(-1), // Move cards to the right
+        trackMouse: true, // Allow swiping with mouse drag
+    });
+
     return (
         <div
+            {...swipeHandlers}
             className="relative w-full overflow-hidden bg-white"
             style={{
                 height: SECTION_HEIGHT,
