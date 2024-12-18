@@ -32,7 +32,7 @@ const ROTATE_DEG = 2.5;
 const STAGGER = 15;
 const CENTER_STAGGER = -65;
 
-const SECTION_HEIGHT = 600;
+const SECTION_HEIGHT = 500;
 const TESTIMONIAL_DATA: Testimonial[] = [
     {
         tempId: 0,
@@ -124,7 +124,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
             initial={false}
             onClick={() => handleMove(position)}
             className={`
-        absolute left-1/2 top-1/2 cursor-pointer border-black p-8 text-black transition-colors duration-500 
+        absolute left-1/2 top-1/2 cursor-pointer border-[rgb(200,56,3);] p-8 text-black transition-colors duration-500 
         ${isActive ? "z-10 bg-white " : "z-0 bg-[rgb(11,22,42)] "}
       `}
             style={{
@@ -149,7 +149,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
             }}
         >
       <span
-          className="absolute block origin-top-right rotate-45 bg-black object-cover"
+          className="absolute block origin-top-right rotate-45 bg-[rgb(200,56,3)] object-cover"
           style={{
               right: -BORDER_SIZE,
               top: CORNER_CLIP - BORDER_SIZE,
@@ -176,7 +176,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
             </h3>
             <p
                 className={`absolute bottom-8 left-8 right-8 mt-2 text-sm italic ${
-                    isActive ? "text-indigo-200" : "text-neutral-700"
+                    isActive ? "text-[rgb(200,56,3)]" : "text-white/40"
                 }`}
             >
                 - {testimonial.by}
@@ -263,7 +263,7 @@ const StaggerTestimonials: FC = () => {
                     />
                 );
             })}
-            <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-8">
+            <div className=" hidden absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-8">
                 <button
                     onClick={() => handleMove(-1)}
                     className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
