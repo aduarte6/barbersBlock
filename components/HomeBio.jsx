@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const HomeBio = () => {
   return (
-      <section className=" relative max-w-screen-xl m-auto justify-center">
+      <section className=" relative max-w-screen-lg m-auto justify-center">
           <div className="w-full flex flex-col gap-4 mt-8 px-4">
               <div className="max-w-[3em] text-[clamp(4rem,5vw,5em)] font-[900] text-chicagoOrange leading-none">
 
@@ -31,7 +31,7 @@ const HomeBio = () => {
               </div>
 
           </div>
-          <div className="absolute right-[0] top-0">
+          <div className="absolute right-[0] top-0 max-w-[25em]">
               <Image  className={styles.chiPng} src="/images/home/chicagoout.webp" alt="https://stock.adobe.com/images/chicago/431255482?prev_url=detail" width={100} height={800} />
 
           </div>

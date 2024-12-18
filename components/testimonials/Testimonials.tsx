@@ -124,7 +124,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
             initial={false}
             onClick={() => handleMove(position)}
             className={`
-        absolute left-1/2 top-1/2 cursor-pointer border-[rgb(200,56,3);] p-8 text-white transition-colors duration-500 
+        rounded-lg absolute left-1/2 top-1/2 cursor-pointer border-[rgb(200,56,3);] p-8 text-white transition-colors duration-500 
         ${isActive ? "z-10 bg-orangeGradient backdrop-blur-[10px]" : "z-0 bg-navyGradient backdrop-blur-[10px] "}
       `}
             style={{
