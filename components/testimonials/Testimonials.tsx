@@ -161,7 +161,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
             <img
                 src={testimonial.imgSrc}
                 alt={`Testimonial image for ${testimonial.by}`}
-                className="mb-4 h-14 w-12 bg-[rgb(11,22,42)] object-cover object-top"
+                className="mb-4 h-14 w-12 bg-[rgb(11,22,42)] object-cover object-top rounded-md"
                 style={{
                     boxShadow: "3px 3px 0px chicagoOrange",
 
@@ -176,7 +176,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
             </h3>
 
 
-            <div className="w-[80%] justify-around flex flex-row absolute bottom-[0.5rem] text-sm italic items-center">
+            <div className="w-[100%] justify-left flex flex-row absolute bottom-[2rem] text-sm italic items-center">
                 <div className={"w-1/2"}>
                     <p
                     className={` ${
@@ -186,7 +186,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
                     - {testimonial.by}
                     </p>
                 </div>
-                <div className={"w-[4rem] items-end"}>
+                <div className={"w-[23rem] top-[-7em] left-[0] absolute"}>
 
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
