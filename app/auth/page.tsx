@@ -51,10 +51,23 @@ function UserProfile({ signOut }: { signOut: () => void }) {
     );
 }
 
+
+const formFields = {
+    signUp:{
+        name:{
+            order:1
+        },
+        phone_number:{
+            order:2
+        }
+    }
+
+
+}
 export default function AuthPage() {
     return (
-        <div style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}>
-            <Authenticator>
+        <div className="flex m-auto justify-center my-12">
+            <Authenticator formFields={formFields}>
                 {({ signOut }) => <UserProfile signOut={signOut} />}
             </Authenticator>
         </div>

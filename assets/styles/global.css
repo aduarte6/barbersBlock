@@ -27,3 +27,61 @@ body{
     background-color: white;
     /*overflow: hidden;*/
 }
+
+.amplify-button button[type="submit"] {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background: var( --bears-orange) !important;
+    border: 2px solid black;
+}
+
+.amplify-button:hover {
+    background: unset;
+}
+
+.amplify-tabs__item--active {
+    color: var( --bears-orange) !important;
+    border-color: #e73205 !important;
+    border-radius:1rem !important;
+}
+
+.amplify-tabs__item:hover {
+    color: var( --bears-orange) !important;
+}
+
+
+.amplify-button.amplify-button--primary {
+    background-color: #e73205 !important;
+
+}
+
+.amplify-button.amplify-button--primary:hover {
+    background-color: var( --bears-orange) !important;
+
+}
+
+.amplify-button.amplify-button--link.amplify-button--small {
+    color: var(  --bears-navy) ;
+    opacity:0.7;
+
+}
+
+.amplify-button.amplify-button--link.amplify-button--small:hover {
+    color: #cc5200; /* Darken the text color on hover */
+
+}
+
+.amplify-tabs__item[aria-controls*="panel-signUp"] {
+    color: var(  --bears-navy) ;
+
+}
+
+ .amplify-tabs__item[aria-controls*="panel-signUp"]:hover {
+
+}
+
+
+div[data-amplify-router]{
+    border-radius:1rem;
+}
+
