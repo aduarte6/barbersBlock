@@ -232,6 +232,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
                     </div>
                 <div className={"w-[23rem] top-[-3em] left-[7rem] absolute"}>
                     <Image
+                        alt="barber clippers"
                         src="/images/home/clippers.webp"
                         width={200}
                         height={200}
