@@ -21,7 +21,7 @@ interface TestimonialsProps {
 }
 
 const CARD_SIZE_LG = 365;
-const CARD_SIZE_SM = 290;
+const CARD_SIZE_SM = 270;
 
 const BORDER_SIZE = 2;
 const CORNER_CLIP = 50;
@@ -177,7 +177,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
 
 
             <div className="w-[100%] justify-left flex flex-row absolute bottom-[2rem] text-sm italic items-center">
-                <div className={"w-1/2"}>
+                <div className={"z-10 w-1/2"}>
                     <p
                     className={` ${
                         isActive ? "text-white/60" : "text-white/40"
@@ -186,7 +186,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
                     - {testimonial.by}
                     </p>
                 </div>
-                <div className={"hidden w-[23rem] top-[-7em] left-[0] absolute"}>
+                <div className={" hidden w-[23rem] top-[-7em] left-[0] absolute"}>
 
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +230,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
                                 d="M1105.7,1348.8h-469.5c-10.2,0-18.5,8.3-18.5,18.5v51.8c0,10.2,8.3,18.5,18.5,18.5h469.5c10.2,0,18.5-8.3,18.5-18.5v-51.8c0-10.2-8.3-18.5-18.5-18.5Z"/>
                         </svg>
                     </div>
-                <div className={"w-[23rem] top-[-3em] left-[7rem] absolute"}>
+                <div className={" z-0 w-[23rem] top-[-2em] left-[7rem] absolute"}>
                     <Image
                         alt="barber clippers"
                         src="/images/home/clippers.webp"
