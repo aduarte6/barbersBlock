@@ -73,7 +73,6 @@ body{
 
 .amplify-tabs__item[aria-controls*="panel-signUp"] {
     color: var(  --bears-navy) ;
-
 }
 
  .amplify-tabs__item[aria-controls*="panel-signUp"]:hover {
