@@ -4,7 +4,7 @@ import React, { FC, useEffect, useState, MouseEventHandler } from "react";
 import { motion } from "framer-motion";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import { useSwipeable } from "react-swipeable";
-
+import Image from "next/image";
 
 interface Testimonial {
     tempId: number;
@@ -186,7 +186,7 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
                     - {testimonial.by}
                     </p>
                 </div>
-                <div className={"w-[23rem] top-[-7em] left-[0] absolute"}>
+                <div className={"hidden w-[23rem] top-[-7em] left-[0] absolute"}>
 
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -230,6 +230,14 @@ const Testimonials: FC<TestimonialsProps> = ({ position, testimonial, handleMove
                                 d="M1105.7,1348.8h-469.5c-10.2,0-18.5,8.3-18.5,18.5v51.8c0,10.2,8.3,18.5,18.5,18.5h469.5c10.2,0,18.5-8.3,18.5-18.5v-51.8c0-10.2-8.3-18.5-18.5-18.5Z"/>
                         </svg>
                     </div>
+                <div className={"w-[23rem] top-[-3em] left-[7rem] absolute"}>
+                    <Image
+                        src="/images/home/clippers.webp"
+                        width={200}
+                        height={200}
+                    />
+
+                </div>
 
             </div>
 
@@ -322,14 +330,14 @@ const StaggerTestimonials: FC = () => {
                     className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
                     type="button"
                 >
-                    <GoArrowLeft />
+                    <GoArrowLeft/>
                 </button>
                 <button
                     onClick={() => handleMove(1)}
                     className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
                     type="button"
                 >
-                    <GoArrowRight />
+                    <GoArrowRight/>
                 </button>
             </div>
         </div>
