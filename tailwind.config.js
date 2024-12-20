@@ -15,7 +15,8 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         'links-900': "rgba(17, 32, 60, 1)",
-        'chicagoOrange': "#C83803"
+        'chicagoOrange': "#C83803",
+        'chicagoNavy': "rgb(11,22,42);"
 
       },
     },

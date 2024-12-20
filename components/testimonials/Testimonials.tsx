@@ -20,7 +20,7 @@ interface TestimonialsProps {
     cardSize: number;
 }
 
-const CARD_SIZE_LG = 365;
+const CARD_SIZE_LG = 300;
 const CARD_SIZE_SM = 270;
 
 const BORDER_SIZE = 2;
@@ -58,7 +58,7 @@ const TESTIMONIAL_DATA: Testimonial[] = [
         tempId: 3,
         testimonial:
             "Never miss a Chicago Bears game while getting my haircut. Great atmosphere!",
-        by: "Laura M.",
+        by: "Michael M.",
         imgSrc: "/imgs/barbers/4.jpg",
     },
     {
@@ -70,7 +70,7 @@ const TESTIMONIAL_DATA: Testimonial[] = [
     {
         tempId: 5,
         testimonial:
-            "They’re fantastic with my kids. I can get my haircut while they entertain them.",
+            "My kids love coming here, Great barbers that keep them fresh weekly!",
         by: "Samantha R.",
         imgSrc: "/imgs/barbers/6.jpg",
     },

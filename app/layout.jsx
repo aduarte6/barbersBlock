@@ -3,7 +3,7 @@
 import React from "react";
 import "../assets/styles/global.css";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 import { Amplify } from "aws-amplify";
 import { Authenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
